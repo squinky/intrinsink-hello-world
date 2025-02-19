@@ -6,7 +6,7 @@
 	"callers": [ "Apple", "Banana" ],
 	"videoCallEmbedLink": "https://www.youtube.com/embed/jlyYqZqBDRw?si=sEtyIoaQfeWz5AOr",
 	"styles": {
-		"desktopBackground": "black url('https://squinky.github.io/intrapology-hello-world/images/stars.gif')",
+		"desktopBackground": "black url('https://squinky.github.io/intrinsink-hello-world/images/stars.gif')",
 		"interactBackground": "rgba(0,0,0,0.8)",
 		"mainFont": "Courier, 'Courier New', monospace",
 		"mainTextColor": "white",
