@@ -1,9 +1,9 @@
-# The Intrapology Software
+# Intrinsink software for online interactive performances
 
 If you want to get set up as quickly as possible, start [here](./docs/02_getting-started-with-the-intrapology-software.md).
 
 - [Introduction](#introduction)
-  - [The Intrapology Software in a Nutshell](#the-intrapology-software-in-a-nutshell)
+  - [Intrinsink in a Nutshell](#the-intrapology-software-in-a-nutshell)
   - [Example](#example)
   - [Hello World Template vs App](#hello-world-template-vs-app)
 - [Overview](./docs/01_overview.md)
@@ -29,9 +29,9 @@ If you want to get set up as quickly as possible, start [here](./docs/02_getting
 
 # Introduction
 
-## The Intrapology Software in a Nutshell
+## Intrinsink in a Nutshell
 
-Intrapology’s software is a tool for building performances which are interactive and accessible.
+Intrinsink is a tool for building performances which are interactive and accessible.
 
 ### Interactivity
 
@@ -42,7 +42,7 @@ Our software facilitates the creation of performances that can incorporate and r
 
 ### Accessibility
 
-Making performances more accessible is a key goal of Intrapology’s software. All performances built with the Intrapology software have these accessibility features:
+Making performances more accessible is a key goal of Intrinsink. All performances built with it have these accessibility features:
 
 - The UI includes [a live video stream](./docs/01_overview.md#audience-view-main), enabling both fully-online and hybrid performances. This allows performances built using the Intrapology software to be more accessible to people who face barriers to in-person venues.
 - A built-in subtitles interface which:
@@ -57,12 +57,12 @@ Here is an excerpt from a real performance built with our software (you can find
 
 ## Hello World Template vs App
 
-There are two versions of the Intrapology software available to download:
+There are two versions of Intrinsink available to download:
 
-### Intrapology Hello World
+### Intrinsink Hello World
 
 Intrapology Hello World is a starter template for artists who have limited software development knowledge. If you are new to our software, it is best to start with this version. For information on how to download the Hello World template, see this section: [Downloading the Starter Template](./docs/02_getting-started-with-the-intrapology-software.md#downloading-the-starter-template).
 
-### Intrapology App
+### Intrinsink App
 
-Intrapology App is the core of Intrapology’s software. If you want to make customizations that are not possible with the Hello World starter template, then you will need to build on top of the core Intrapology App code. Building with Intrapology App requires the ability to program with JavaScript, React, and CSS. Intrapology App can be found here: [https://github.com/squinky/intrapology-app](https://github.com/squinky/intrapology-app).
+Intrinsink App is the core of our software. If you want to make customizations that are not possible with the Hello World starter template, then you will need to build on top of the core Intrinsink App code. Building with Intrinsink App requires the ability to program with JavaScript, React, and CSS. Intrinsink App can be found here: [https://github.com/squinky/intrinsink-app](https://github.com/squinky/intrinsink-app).
