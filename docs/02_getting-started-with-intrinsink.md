@@ -1,17 +1,17 @@
 [(Click here for main table of contents)](../README.md)
 
-# Getting Started With the Intrapology Software
+# Getting Started With Intrinsink
 
 - [Downloading the Starter Template](#downloading-the-starter-template)
 - [Basic Configuration](#basic-configuration)
 - [Testing a Performance on Your Computer](#testing-a-performance-on-your-computer)
 - [Installing Inky](#installing-inky)
 
-Here we will walk you through the setup needed to edit and test Intrapology performances.
+Here we will walk you through the setup needed to edit and test Intrinsink performances.
 
 ## Downloading the Starter Template
 
-The Intrapology starter template can be found at [https://github.com/squinky/intrapology-hello-world](https://github.com/squinky/intrapology-hello-world). To download the template, first click the green button labeled “Code” (circled in red below):
+The Intrinsink starter template can be found at [https://github.com/squinky/intrinsink-hello-world](https://github.com/squinky/intrinsink-hello-world). To download the template, first click the green button labeled “Code” (circled in red below):
 
 ![hello_world_github_crop_1_annotated.jpeg](./media/hello_world_github_crop_1_annotated.jpeg)
 
@@ -19,11 +19,11 @@ Once you have clicked the “Code” button, a box will appear below the button.
 
 ![hello_world_github_crop_2_annotated.jpeg](./media/hello_world_github_crop_2_annotated.jpeg)
 
-Click the “Download ZIP” link. When the ZIP file is finished downloading, extract it somewhere on your computer. For this guide it will be assumed that the folder is named “intrapology-hello-world”.
+Click the “Download ZIP” link. When the ZIP file is finished downloading, extract it somewhere on your computer. For this guide it will be assumed that the folder is named “intrinsink-hello-world”.
 
 ## Basic Configuration
 
-Many aspects of your performance can be configured by editing the `settings.json` file found in the `intrapology-hello-world` folder. To get a basic starter performance up and running, we will only be going over one of the available options. For details on all available configuration options, go to: [Configuration (settings.json)](./04_additional-technical-topics.md#configuration-settingsjson).
+Many aspects of your performance can be configured by editing the `settings.json` file found in the `intrinsink-hello-world` folder. To get a basic starter performance up and running, we will only be going over one of the available options. For details on all available configuration options, go to: [Configuration (settings.json)](./04_additional-technical-topics.md#configuration-settingsjson).
 
 ### Editing Settings
 
@@ -55,9 +55,9 @@ This line specifies that the setting called `"performanceId"` should have the va
 
 ## Testing a Performance on Your Computer
 
-Our software is designed to run on a web server on the internet. But with a small bit of setup, it is possible to do test runs of performances on your own computer.
+Intrinsink is designed to run on a web server on the internet. But with a small bit of setup, it is possible to do test runs of performances on your own computer.
 
-To run the Intrapology software on your computer, you will need to install a program that runs a server ‘locally’. This guide will show you how to use an app called Servez for this purpose.
+To run Intrinsink on your computer, you will need to install a program that runs a server ‘locally’. This guide will show you how to use an app called Servez for this purpose.
 
 To download the Servez installer, go here: [https://github.com/greggman/servez/releases/latest](https://github.com/greggman/servez/releases/latest). If you are unsure which version to download, follow these guidelines:
 
@@ -72,7 +72,7 @@ To download the Servez installer, go here: [https://github.com/greggman/servez/r
 
 Once installed, open Servez. Then, do the following (the image below is annotated to show where buttons are located):
 
-1. Click the “…” button under the “Folder to Serve” heading, located near the top right corner of the app window. A file window will open. Find your `intrapology-hello-world` folder and select it.
+1. Click the “…” button under the “Folder to Serve” heading, located near the top right corner of the app window. A file window will open. Find your `intrinsink-hello-world` folder and select it.
 2. Click the “Start” button, located towards the bottom left corner of the app window.
 3. Click the “Launch Browser” button, located next to the “Start” button. This should open the [audience view](./01_overview.md#audience-view-example) of the template performance in your web browser.
 
@@ -82,10 +82,10 @@ Once installed, open Servez. Then, do the following (the image below is annotate
     </a>
 </p>
 
-Feel free to close Servez for now. You will not need to run it again until later in this guide. Servez will remember the Intrapology folder you selected. From now on you will only need to click “Start” and then “Launch Browser” in order to test.
+Feel free to close Servez for now. You will not need to run it again until later in this guide. Servez will remember the Intrinsink folder you selected. From now on you will only need to click “Start” and then “Launch Browser” in order to test.
 
 ## Installing Inky
 
-To work with Intrapology performance scripts, you will need an app called Inky. To get Inky, go to this page: [https://www.inklestudios.com/ink/](https://www.inklestudios.com/ink/), and scroll down to the “Getting Started” section (pictured below). Click the appropriate download button for your computer to download the Inky installer.
+To work with Intrinsink performance scripts, you will need an app called Inky. To get Inky, go to this page: [https://www.inklestudios.com/ink/](https://www.inklestudios.com/ink/), and scroll down to the “Getting Started” section (pictured below). Click the appropriate download button for your computer to download the Inky installer.
 
 ![ink-download-crop-annotated.jpeg](./media/ink-download-crop-annotated.jpeg)

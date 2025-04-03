@@ -1,6 +1,6 @@
 [(Click here for main table of contents)](../README.md)
 
-# Writing an Intrapology/Ink script
+# Writing an Intrinsink/Ink script
 
 - [Basics](#basics)
 - [Interactivity](#interactivity)
@@ -10,9 +10,9 @@
 
 ## Basics
 
-Intrapology scripts use a format called [Ink](https://www.inklestudios.com/ink/). Ink is like the human language that you are used to writing in, but with some extra rules for grammar and punctuation. This section will walk you through the process of writing a minimal script. If you would prefer to learn by reading a list of the grammar and punctuation rules, skip to this section: [Summary](#summary).
+Intrinsink scripts use a format called [Ink](https://www.inklestudios.com/ink/). Ink is like the human language that you are used to writing in, but with some extra rules for grammar and punctuation. This section will walk you through the process of writing a minimal script. If you would prefer to learn by reading a list of the grammar and punctuation rules, skip to this section: [Summary](#summary).
 
-A basic functioning Intrapology script involves the following elements:
+A basic functioning Intrinsink script involves the following elements:
 
 1. [Knots](#knots)
 2. [Dialogue](#dialogue)
@@ -22,10 +22,10 @@ which are explained in this guide.
 
 ### Setup
 
-Open Inky. You will see the default starter Ink script contents in the editor panel (the left half of the window). Delete all text except for the line with `-> END`, then save this new script (”File” menu → “Save Project”) as `tutorial-script.ink` in your `intrapology-hello-world` folder.
+Open Inky. You will see the default starter Ink script contents in the editor panel (the left half of the window). Delete all text except for the line with `-> END`, then save this new script (”File” menu → “Save Project”) as `tutorial-script.ink` in your `intrinsink-hello-world` folder.
 
 > [!TIP]
-> Throughout the “Writing an Intrapology/Ink script” guide, you will be instructed to add text to your tutorial script. When adding text, try to do so by typing the text yourself rather than copying and pasting. This will help your brain to process and retain the information being covered.
+> Throughout the “Writing an Intrinsink/Ink script” guide, you will be instructed to add text to your tutorial script. When adding text, try to do so by typing the text yourself rather than copying and pasting. This will help your brain to process and retain the information being covered.
 
 ### Knots
 
@@ -37,11 +37,11 @@ Add the following line to the beginning of your script:
 
 `==` followed by a name is a “knot heading”, which means: ‘the knot with this name begins here’. A “knot” is a piece of your script that can be referred to by name; you can think of a knot as a section or scene.
 
-An Intrapology script needs at least one knot to function. You can name the knot anything you like in your scripts, but for this guide we use the name “Start”.
+An Intrinsink script needs at least one knot to function. You can name the knot anything you like in your scripts, but for this guide we use the name “Start”.
 
 ### Diverts
 
-In order to function properly, every Intrapology script requires two special statements:
+In order to function properly, every Intrinsink script requires two special statements:
 
 1. A statement telling the software where to begin the performance
 2. A statement telling the software where to end the performance
@@ -52,9 +52,9 @@ Add the following text on its own line at the beginning of the script (before th
 -> Start
 ```
 
-In Ink, writing `->` followed by a name means: ‘now go to the knot with this name’. This is called a “divert”. Every Intrapology script must begin with a divert specifying which knot to start the performance with (even if the script only has one knot). The divert above tells the Intrapology software that your performance starts with the knot named “Start”.
+In Ink, writing `->` followed by a name means: ‘now go to the knot with this name’. This is called a “divert”. Every Intrinsink script must begin with a divert specifying which knot to start the performance with (even if the script only has one knot). The divert above tells Intrinsink that your performance starts with the knot named “Start”.
 
-The `-> END` divert present at the end of the “Start” knot tells the Intrapology software that once the “Start” knot is finished, the performance should end. Note that you do not need to have a knot named `END`. `END` is a special built-in key word which does not refer to a knot in your script.
+The `-> END` divert present at the end of the “Start” knot tells Intrinsink that once the “Start” knot is finished, the performance should end. Note that you do not need to have a knot named `END`. `END` is a special built-in key word which does not refer to a knot in your script.
 
 > [!TIP]
 > It is best that whenever you add a new knot to your script, you are sure to do the following:
@@ -84,10 +84,10 @@ Apple: Hi, I'm the first video caller!
 Banana: Hi, I'm the second video caller!
 ```
 
-Writing the name of a character (in this case `Apple` or `Banana`), followed by a colon `:`, followed by some text, means: ‘the character with this name says this text’. When each line of dialogue is reached during a performance, the Intrapology interface will show it to the relevant performer. The [Subtitles View](./01_overview.md#subtitles-view) will show the line of dialogue as well. The moderator view also displays the current line of dialogue.
+Writing the name of a character (in this case `Apple` or `Banana`), followed by a colon `:`, followed by some text, means: ‘the character with this name says this text’. When each line of dialogue is reached during a performance, the Intrinsink user interface will show it to the relevant performer. The [Subtitles View](./01_overview.md#subtitles-view) will show the line of dialogue as well. The moderator view also displays the current line of dialogue.
 
 > [!WARNING]
-> Remember: all characters with dialogue in your script must be listed via the [`"callers"`](#character-names)[ option](#character-names) in `settings.json`. Since `“Apple”` and `“Banana”` are specified by default in the Intrapology Hello World template, no action is required for for now. However, if you write a script with different character names, you will need to update `settings.json`.
+> All characters with dialogue in your script must be listed via the [`"callers"`](#character-names)[ option](#character-names) in `settings.json`. Since `“Apple”` and `“Banana”` are specified by default in the Intrinsink Hello World template, no action is required for for now. However, if you write a script with different character names, you will need to update `settings.json`.
 
 At this point, the contents of your script file should look like this:
 
@@ -103,13 +103,13 @@ Banana: Hi, I'm the second video caller!
 -> END
 ```
 
-This is enough to use for a trial run with the Intrapology software.
+This is enough to use for a trial run with Intrinsink.
 
 ### Running the Performance Locally
 
-If you have not already done so, [set a unique Performance ID](./04_additional-technical-topics.md#performance-id) and [install and set up Servez](./02_getting-started-with-the-intrapology-software.md#testing-a-performance-on-your-computer) before continuing.
+If you have not already done so, [set a unique Performance ID](./04_additional-technical-topics.md#performance-id) and [install and set up Servez](./02_getting-started-with-intrinsink.md#testing-a-performance-on-your-computer) before continuing.
 
-1. First you need to ‘export’ the script to a file format that the Intrapology software can use. To do so, go to the “File” menu and click the item labelled “Export to JSON…”. Name the exported file `script.json` (make sure you aren’t using the default name `script.ink.json`) and save it in your `intrapology-hello-world` folder.
+1. First you need to ‘export’ the script to a file format that Intrinsink can use. To do so, go to the “File” menu and click the item labelled “Export to JSON…”. Name the exported file `script.json` (make sure you aren’t using the default name `script.ink.json`) and save it in your `intrinsink-hello-world` folder.
 2. Open Servez and click the “Start” button.
 3. Click the “Launch Browser” button, which will open the Audience View in your web browser. Make a note of the URL in the address bar (it will be something like `localhost:8080`), you will need it for the next step. It will be referred to from here on as `<base url>`.
 4. Go to the following additional pages, each in a separate web browser window:
@@ -146,7 +146,7 @@ and before the `-> END`, add the following to your script:
 ```
 == MultipleChoice
 
-@What should be our next topic of discussion?
+AUDIENCE_CHOICES: What should be our next topic of discussion?
 
 Apple: Here is some multiple-choice voting!
 
@@ -161,10 +161,10 @@ Banana: What should be our next topic of discussion?
 
 To have an audience multiple-choice vote, a script must have the following:
 
-1. A block of text prefixed with the `@` symbol. This text will be shown to the audience at the top of [the audience view](./01_overview.md#audience-view) UI during the voting period. The placement of this block of text determines when the audience vote UI becomes visible.
-2. A set of choices for the audience to vote on. An `@` block will be associated with the closest group of choices below the `@` text. A choice is prefixed with the `*` symbol. Each choice should be on its own line.
+1. A block of text prefixed with the `AUDIENCE_CHOICES:` keyword. This text will be shown to the audience at the top of [the audience view](./01_overview.md#audience-view) UI during the voting period. The placement of this block of text determines when the audience vote UI becomes visible.
+2. A set of choices for the audience to vote on. An `AUDIENCE_CHOICES` block will be associated with the closest group of choices below the `AUDIENCE_CHOICES:` line. A choice is prefixed with the `*` symbol. Each choice should be on its own line.
 
-During a performance, the audience will be presented with the choice UI once the `@` has been reached. When this happens, a title with the text "What should be our next topic of discussion?" will be displayed, as will 3 buttons, each having, respectively, the following text:
+During a performance, the audience will be presented with the choice UI once the `AUDIENCE_CHOICES:` line has been reached. When this happens, a title with the text "What should be our next topic of discussion?" will be displayed, as will 3 buttons, each having, respectively, the following text:
 
 - "Apple: The weather!"
 - "Apple: Cats!"
@@ -176,11 +176,11 @@ The choice with the most votes becomes the next line of dialogue for the charact
 > The voting UI will remain visible to the audience until the choice group has been reached.
 
 > [!TIP]
-> You can use `*` or `+` for choices. For Intrapology these two options have the same meaning. But in other uses of Ink, `*` and `+` work differently. We recommend using `*` in general, since it works the same in both Ink and Intrapology, whereas `+` has a special meaning outside of Intrapology.
+> You can use `*` or `+` for choices. For Intrinsink these two options have the same meaning. But in other uses of Ink, `*` and `+` work differently. We recommend using `*` in general, since it works the same in both Ink and Intrinsink, whereas `+` has a special meaning outside of Intrinsink.
 
 ### Flow and Choice Branching
 
-At this point we need to discuss the concepts of **flow** and **choice branching**.  'Flow' is a term used to describe the path taken through an Ink/Intrapology script. The script itself is a static document in which all content is present at once. But a live performance proceeds (flows) through the script one bit at a time. The flow of a performance is the collection of sequenced steps through the source script. Before adding the multiple choice section, we had written a script with a single possible flow. The sequence of steps in a performance of the script would have been the same every time. However, with the addition of audience choices, we now have a script which has more than one possible flow. When the audience selects a choice, the performance flow will follow a 'branch' for that choice. The diagram below visualizes the diverging possible flows of the script:
+At this point we need to discuss the concepts of **flow** and **choice branching**.  'Flow' is a term used to describe the path taken through an Ink/Intrinsink script. The script itself is a static document in which all content is present at once. But a live performance proceeds (flows) through the script one bit at a time. The flow of a performance is the collection of sequenced steps through the source script. Before adding the multiple choice section, we had written a script with a single possible flow. The sequence of steps in a performance of the script would have been the same every time. However, with the addition of audience choices, we now have a script which has more than one possible flow. When the audience selects a choice, the performance flow will follow a 'branch' for that choice. The diagram below visualizes the diverging possible flows of the script:
 
 ```mermaid
 graph TD
@@ -196,7 +196,7 @@ graph TD
 
 The diagram shows each choice branch leading to a different "???". There are two important points which need to be noted here:
 
-- With Ink/Intrapology scripts, each individual choice is the start of its own branch of the flow. Each choice leads to a next step which is distinct from the steps of its 'sibling' choices. This is why the diagram shows each choice having its own outgoing arrow. What comes after a choice is the content written between that choice and the next choice. An example of this will be given shortly.
+- With Ink/Intrinsink scripts, each individual choice is the start of its own branch of the flow. Each choice leads to a next step which is distinct from the steps of its 'sibling' choices. This is why the diagram shows each choice having its own outgoing arrow. What comes after a choice is the content written between that choice and the next choice. An example of this will be given shortly.
 - Each choice leads to a next step, but our script so far does not specify what happens next for any of the choices. Any choice which does not lead to anything else is a dead end, which is not allowed. Such a choice leads to a scenario where the flow has nowhere left to go, even though an `-> END` divert has not been reached. So it is required to specify what should happen after each choice. Every choice must be followed by *something*, even if that something is simply `-> END`. Luckily, Inky will display a warning when there is a choice which leads to a dead end.
 
 > [!NOTE]
@@ -276,7 +276,7 @@ Diverts and dialogue are both legal kinds of content for a gather.
 
 ### Free-Response Audience Input
 
-The Intrapology software also offers a way to collect ‘free-response’ style audience input and incorporate it into a performance.
+Intrinsink also offers a way to collect ‘free-response’ style audience input and incorporate it into a performance.
 
 First, replace this line (at the end of the “MultipleChoice” knot):
 
@@ -295,7 +295,7 @@ Next, add the following to the end of your script:
 ```
 == WriteIn
 
-@Write any thoughts you have about the topic here.
+AUDIENCE_RANTBOX: Write any thoughts you have about the topic here.
 
 Apple: Now it's time for some fun with write-in options!
 
@@ -303,7 +303,7 @@ Banana: The audience is going to type stuff in and you are going to read it all!
 
 Apple: That's right!
 
-Apple: Firebase-read
+Apple: RANT_READ
 
 + z
 
@@ -312,7 +312,7 @@ Banana: That's all, folks!
 -> END
 ```
 
-In a knot with an `@`-prompt line and a line of dialogue with the exact text: `Firebase-read`, the audience will be prompted to write whatever they would like into a text box. Once the `CHARACTER: Firebase-read` line is reached, the relevant performer will be shown a list of the responses from each audience member. In this instance, audience members would be presented with the prompt “Write any thoughts you have about the topic here.”, and the performer for `Apple` will be shown the audience responses.
+In a knot with an `AUDIENCE_RANTBOX:` prompt line and a line of dialogue with the exact text: `RANT_READ`, the audience will be prompted to write whatever they would like into a text box. Once the `CHARACTER: RANT_READ` line is reached, the relevant performer will be shown a list of the responses from each audience member. In this instance, audience members would be presented with the prompt “Write any thoughts you have about the topic here.”, and the performer for `Apple` will be shown the audience responses.
 
 > [!NOTE]
 > The write-in prompt will remain visible until another audience input line is reached. This is why we have added `+ z` (a fake choice which the audience will not be presented with): to cause the write-in prompt to go away before the next line.
@@ -342,16 +342,16 @@ There are several things to note here:
 Replace this line (in the “WriteIn” knot):
 
 ```
-@Write any thoughts you have about the topic here.
+AUDIENCE_RANTBOX: Write any thoughts you have about the topic here.
 ```
 
 with this:
 
 ```
-@Write any thoughts you have about {topic} here.
+AUDIENCE_RANTBOX: Write any thoughts you have about {topic} here.
 ```
 
-In a line of text, placing the name of a variable between curly brackets (`{` and `}`) tells Ink/Intrapology to insert whatever is stored in the variable at that part of the line. So when running a performance of the script so far, when the line we have just added is reached, the audience will be presented with “Write any thoughts you have about nothing here.”, since the variable named `topic` has been given the value “nothing”. This can be used in a line of dialogue as well.
+In a line of text, placing the name of a variable between curly brackets (`{` and `}`) tells Ink/Intrinsink to insert whatever is stored in the variable at that part of the line. So when running a performance of the script so far, when the line we have just added is reached, the audience will be presented with “Write any thoughts you have about nothing here.”, since the variable named `topic` has been given the value “nothing”. This can be used in a line of dialogue as well.
 
 **Updating Variables**
 
@@ -391,7 +391,7 @@ so that it is like this:
 Note that now information is being stored in the `topic` variable which depends on the result of the audience vote. With this change, the contents of the prompt for this line:
 
 ```
-@Write any thoughts you have about {topic} here.
+AUDIENCE_RANTBOX: Write any thoughts you have about {topic} here.
 ```
 
 will depend on what the audience has voted for earlier in the performance. Storing differing values in a variable depending on the selected choice branch, and then using that variable later in the script, is a technique which can increase the degree to which a performance changes in response to audience input. For example, you can also incorporate variables into dialogue, like this:
@@ -423,7 +423,7 @@ Banana: Hi, I'm the second video caller!
 
 == MultipleChoice
 
-@What should be our next topic of discussion?
+AUDIENCE_CHOICES: What should be our next topic of discussion?
 
 Apple: Here is some multiple-choice voting!
 
@@ -440,7 +440,7 @@ Banana: What should be our next topic of discussion?
 
 == WriteIn
 
-@Write any thoughts you have about {topic} here.
+AUDIENCE_RANTBOX: Write any thoughts you have about {topic} here.
 
 Apple: Now it's time for some fun with write-in options!
 
@@ -448,7 +448,7 @@ Banana: The audience is going to type stuff in and you are going to read it all!
 
 Apple: That's right!
 
-Apple: Firebase-read
+Apple: RANT_READ
 
 + z
 
@@ -462,13 +462,13 @@ Banana: That's all, folks!
 - **Knots**: `== Start` is a “knot heading”, which means ‘the knot (section) named `Start` begins here’. To learn more, go here: [https://github.com/inkle/ink/blob/v.1.2.0/Documentation/WritingWithInk.md#3-knots](https://github.com/inkle/ink/blob/v.1.2.0/Documentation/WritingWithInk.md#3-knots)
 - **Dialogue**: `Apple: Hi, I'm the first video caller!`  means ‘the character named `Apple` says “Hi, I’m the first video caller!”’. This will be shown to the performer for the `Apple` character via their [Actor View](./01_overview.md#actor-view).
 - **Diverts**: `-> Start` means ‘go to the knot named `Start`’
-    - You must begin your script with a divert telling Intrapology which knot to go to first.
-    - You must have at least one `-> END` divert telling Intrapology where the performance ends. Inky will warn you if you are missing this.
+    - You must begin your script with a divert telling Intrinsink which knot to go to first.
+    - You must have at least one `-> END` divert telling Intrinsink where the performance ends. Inky will warn you if you are missing this.
     - To learn more, go here: [https://github.com/inkle/ink/blob/v.1.2.0/Documentation/WritingWithInk.md#4-diverts](https://github.com/inkle/ink/blob/v.1.2.0/Documentation/WritingWithInk.md#4-diverts)
 - **Multiple-choice Audience Input**:
     
     ```
-    @What should be our next topic of discussion?
+    AUDIENCE_CHOICES: What should be our next topic of discussion?
     
     * Apple: The weather!
     * Apple: Cats!
@@ -487,12 +487,12 @@ Banana: That's all, folks!
 - **Free-Response Audience Input**:
     
     ```
-    @Write any thoughts you have about cats here.
+    AUDIENCE_RANTBOX: Write any thoughts you have about cats here.
     
-    Apple: Firebase-read
+    Apple: RANT_READ
     ```
     
-    In a knot with an `@`-prompt line and a line of dialogue with the exact text: `Firebase-read`, the audience will be prompted to write whatever they would like into a text box. Once the `CHARACTER: Firebase-read` line is reached, the relevant performer will be shown a list of the responses from each audience member.
+    In a knot with an `AUDIENCE_RANTBOX:` prompt line and a line of dialogue with the exact text: `RANT_READ`, the audience will be prompted to write whatever they would like into a text box. Once the `CHARACTER: RANT_READ` line is reached, the relevant performer will be shown a list of the responses from each audience member.
     
 - **Variables**:
     - **Creating a variable**: `VAR topic = "nothing"`  means ‘create a variable named `topic` which for now has the value `"nothing"`'.
