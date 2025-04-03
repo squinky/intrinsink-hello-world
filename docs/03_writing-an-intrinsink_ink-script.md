@@ -524,7 +524,7 @@ Banana: That's all, folks!
 If you write a performance with characters other than `Apple` and `Banana`, you will need to add your character names to  the `"callers"` setting in `settings.json`. The `"callers"` setting is used to specify the names of characters which have dialogue.
 
 > [!NOTE]
-> You do not need to change the `"callers"` setting if you will be following the script writing tutorial. The characters in the tutorial script are included by default in  `settings.json`. However, it is important to know how to set character names for your own scripts.
+> You do not need to change the `"callers"` setting if you are just following the script writing tutorial. The characters in the tutorial script are included by default in  `settings.json`. However, it is important to know how to set character names for your own scripts.
 
 On line 5 of `settings.json` is the following:
 
