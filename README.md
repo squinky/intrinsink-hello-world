@@ -68,4 +68,3 @@ Intrinsink Hello World is a starter template for artists who have limited softwa
 ### Intrinsink App
 
 Intrinsink App is the core of our software. If you want to make customizations that are not possible with the Hello World starter template, then you will need to build on top of the core Intrinsink App code. Building with Intrinsink App requires the ability to program with JavaScript, React, and CSS. Intrinsink App can be found here: [https://github.com/squinky/intrinsink-app](https://github.com/squinky/intrinsink-app).
-
