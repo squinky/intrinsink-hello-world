@@ -14,7 +14,7 @@
 
 **[REQUIRED]**
 
-A unique name for your performance, used by the Intrapology software to distinguish it from other performances. Should not include spaces. Make sure this is something that another performance will not be likely to use (for example, something generic like “performance” or “my-performance” is a bad idea). The performance ID is used by the Intrapology software to keep track of the current state of your performance. This includes the current line of dialogue, and audience voting selections.
+A unique name for your performance, used by Intrinsink to distinguish it from other performances. Should not include spaces. Make sure this is something that another performance will not be likely to use (for example, something generic like “performance” or “my-performance” is a bad idea). The performance ID is used by Intrinsink to keep track of the current state of your performance. This includes the current line of dialogue, and audience voting selections.
 
 ### **modPassword**
 
@@ -44,7 +44,7 @@ The placeholder message to be displayed to the audience when there is no audienc
 
 ## Customizations to Visual Presentation (`settings.json` styles)
 
-The following options are available for customizing the look of the Intrapology UI (follow the ‘type’ link for information about the type of data allowed for that option):
+The following options are available for customizing the look of the Intrinsink UI (follow the ‘type’ link for information about the type of data allowed for that option):
 
 ### **desktopBackground**
 

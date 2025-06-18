@@ -7,7 +7,7 @@
 
 ## Performance Structure
 
-An Intrapology performance typically has the following components:
+An Intrinsink performance typically has the following components:
 
 ### Live Video Stream
 
@@ -15,7 +15,7 @@ A video stream where audience members can see and hear your actors.
 
 ### Moderator
 
-A member of your crew who controls the pace of the performance. The Intrapology software handles displaying current dialogue to performers, and collecting audience input. However, the software needs [input from the moderator](#performance-controls) to know when to advance to the next line of the script.
+A member of your crew who controls the pace of the performance. Intrinsink handles displaying current dialogue to performers, and collecting audience input. However, the software needs [input from the moderator](#performance-controls) to know when to advance to the next line of the script.
 
 ### Actors
 
@@ -27,7 +27,7 @@ The audience [plays an active role](#audience-input) in the flow of the performa
 
 ## User Interface
 
-During a performance, the Intrapology software provides four different views:
+During a performance, Intrinsink provides four different views:
 
 1. [Audience View](#audience-view)
 2. [Subtitles View](#subtitles-view)
@@ -41,17 +41,17 @@ The audience view is available at the ‘base’ URL where your performance is b
 The audience view has two sections:
 
 1. <a id="audience-view-main" aria-hidden="true"></a>**The video feed area**: Displays [the video feed](./04_additional-technical-topics.md#videocallembedlink) for the performance.
-2. <a id="audience-input" aria-hidden="true"></a>**The audience input area**: This is where audience members can select options during a multiple-choice vote. This is also where audience members can write anything they would like during an audience free-response section. When audience input is not being accepted, some placeholder text will be displayed. The default placeholder text is “You don't have to do anything right now - just sit back and enjoy the show!”. You can change the placeholder text to something else by changing the value of the [`"defaultAudienceMessage"`](./04_additional-technical-topics.md#defaultaudiencemessage)[ option](./04_additional-technical-topics.md#defaultaudiencemessage) in `intrapology-hello-world/settings.json`.
+2. <a id="audience-input" aria-hidden="true"></a>**The audience input area**: This is where audience members can select options during a multiple-choice vote. This is also where audience members can write anything they would like during an audience free-response section. When audience input is not being accepted, some placeholder text will be displayed. The default placeholder text is “You don't have to do anything right now - just sit back and enjoy the show!”. You can change the placeholder text to something else by changing the value of the [`"defaultAudienceMessage"`](./04_additional-technical-topics.md#defaultaudiencemessage)[ option](./04_additional-technical-topics.md#defaultaudiencemessage) in `intrinsink-hello-world/settings.json`.
 
-<a id="audience-view-example" aria-hidden="true"></a>![An annotated screenshot of the Intrapology audience view. The performance video feed is described by VoiceOver as “[Performance Video Stream Title] - YouTube, frame”.](./media/ui_audience_annotated.jpeg)
+<a id="audience-view-example" aria-hidden="true"></a>![An annotated screenshot of the Intrinsink audience view. The performance video feed is described by VoiceOver as “[Performance Video Stream Title] - YouTube, frame”.](./media/ui_audience_annotated.jpeg)
 
 <a id="multiple-choice" aria-hidden="true"></a>During an audience vote, the input section will contain a text prompt, and buttons for voting. The text for each option button includes the number of votes which that option has received. The button for the option which currently has the most votes will be tagged with a “⭐️ winning” label. The vote counts and winning tag are updated in real time. If an audience member has selected an option, then its relevant button will be tagged with a “✅ selected” label.
 
-![A screenshot of the Intrapology audience view during an audience multiple-choice vote. The audience input area of the view includes some text prompting the audience for input (in this screenshot, the text is “What should be our next topic of discussion?”), followed by buttons to vote for one of the available options. Each button is labelled with text describing the option that the button is for. The text for the winning option will be prefixed with “⭐️ winning”, and the text for the option the audience member has currently selected will be suffixed with “✅ selected”.](./media/ui_audience_vote.jpeg)
+![A screenshot of the Intrinsink audience view during an audience multiple-choice vote. The audience input area of the view includes some text prompting the audience for input (in this screenshot, the text is “What should be our next topic of discussion?”), followed by buttons to vote for one of the available options. Each button is labelled with text describing the option that the button is for. The text for the winning option will be prefixed with “⭐️ winning”, and the text for the option the audience member has currently selected will be suffixed with “✅ selected”.](./media/ui_audience_vote.jpeg)
 
 <a id="free-response" aria-hidden="true"></a>During audience free-response, the input section of the audience view will present audience members with a message prompting them to write about something, and a text input box in which to write. Below the input box is a bulleted list of the text submissions from all audience members. The list of text submissions updates in real time.
 
-![A screenshot of the Intrapology audience view during an audience free-response period. The audience input area of the view includes some text prompting the audience for their thoughts (in this screenshot, the text is “Write any thoughts you have about cats here”), followed by an "edit text" input element, followed by a "Submit" button.](./media/ui_audience_rant.jpeg)
+![A screenshot of the Intrinsink audience view during an audience free-response period. The audience input area of the view includes some text prompting the audience for their thoughts (in this screenshot, the text is “Write any thoughts you have about cats here”), followed by an "edit text" input element, followed by a "Submit" button.](./media/ui_audience_rant.jpeg)
 
 ### Subtitles View
 
@@ -105,6 +105,6 @@ And here is an example of what the actor for the character named “Apple” see
 
 ### Demonstration
 
-Here is an example run-through of the sample script (included as `script.ink` with the Intrapology Hello World). This demo shows how the moderator view (top left), audience view (top right), and actor views (bottom left and right) change as the performance progresses:
+Here is an example run-through of the sample script (included as `script.ink` with Intrinsink Hello World). This demo shows how the moderator view (top left), audience view (top right), and actor views (bottom left and right) change as the performance progresses:
 
 [Demonstration of running sample script](https://github.com/user-attachments/assets/2e52d864-066f-41e6-955b-4d931011e715)

@@ -30,7 +30,7 @@ Colors can also be specified in terms of red, green, and blue intensity percenta
 rgb(RED INTENSITY, GREEN INTENSITY, BLUE INTENSITY)
 ```
 
-With this approach, the color is derived by mixing the three primary colors, set to certain intensities. An intensity of 0% for a primary color means that it contributes nothing to the final result. If all three primary colors are set to 0% intensity, then you get black: `rgb(0%, 0%, 0%)` is equivalent to the named color `"black"`. If all three primary colors are set to 100% intensity, then you get white: `rgb(100%, 100%, 100%)` is equivalent to the named color `“white”`. Setting the intensities of two of the primary colors to 0%, and then setting the intensity of the remaining primary color to something greater than 0%, will give you a shade of that primary color: `rgb(0%, 90%, 0%)` is a bright green, whereas `rgb(0%, 20%, 0%)` is a dark green. Nearly any color imaginable can be described this way. For example, to set the main text color of the Intrapology UI to a mild purple, you could specify a mix of: red at 60% intensity, green at 0% intensity, and blue at 50% intensity with the following:
+With this approach, the color is derived by mixing the three primary colors, set to certain intensities. An intensity of 0% for a primary color means that it contributes nothing to the final result. If all three primary colors are set to 0% intensity, then you get black: `rgb(0%, 0%, 0%)` is equivalent to the named color `"black"`. If all three primary colors are set to 100% intensity, then you get white: `rgb(100%, 100%, 100%)` is equivalent to the named color `“white”`. Setting the intensities of two of the primary colors to 0%, and then setting the intensity of the remaining primary color to something greater than 0%, will give you a shade of that primary color: `rgb(0%, 90%, 0%)` is a bright green, whereas `rgb(0%, 20%, 0%)` is a dark green. Nearly any color imaginable can be described this way. For example, to set the main text color of the Intrinsink UI to a mild purple, you could specify a mix of: red at 60% intensity, green at 0% intensity, and blue at 50% intensity with the following:
 
 ```json
 "mainTextColor": "rgb(60%, 0%, 50%)",
@@ -54,7 +54,7 @@ The font for a given setting is specified as a list of one or more comma-separat
 "mainFont": "Arial, Helvetica, sans-serif",
 ```
 
-the web browser being used to view the Intrapology UI will first try to use Arial for the main font. If Arial is not found, then the browser will look for Helvetica. If Helvetica is not available either, then the default sans serif font for the browser will be used.
+the web browser being used to view the Intrinsink UI will first try to use Arial for the main font. If Arial is not found, then the browser will look for Helvetica. If Helvetica is not available either, then the default sans serif font for the browser will be used.
 
 **Generic Fonts**
 
@@ -83,8 +83,8 @@ Here is a quick guide to using a custom font:
 5. On the “Embed code” page, the right-hand portion of the view will have a pair of buttons labelled “\<link\>” and “@import”. “\<link\>” is selected by default, select “@import” instead.
 6. There will be a box labelled “\<Font Name\>: CSS classes”. Inside the box will be some text, you can ignore most of it, but take a note of the first line you see which begins with “font-family: “. This line will show you how to refer to the font by name in `settings.json`. For Libre Baskerville, the line in question is: `font-family: "Libre Baskerville", serif;`. The bit to write down somewhere is the font name in between quotes (e.g. ”Libre Baskerville”)
 7. There will be a box labelled “Embed code in the \<head\> of your html”. Inside the box will be a button labelled “Copy code”: click this button.
-8. Open `intrapology-hello-world/index.html` in a text editor. Right between this bit of text: `<!doctype html><html lang="en"><head>` (found at the very beginning of the file) and this bit of text: `<meta charset="utf-8"/>`, paste the code that was copied during the previous step. Make sure to save this change to the file.
-9. Open `intrapology-hello-world/settings.json` and add the font name from step 6 to the beginning of the list of fonts. Make sure that you use single quotes instead of double quotes. For example, if adding Libre Baskerville the whole line in `settings.json` should be: 
+8. Open `intrinsink-hello-world/index.html` in a text editor. Right between this bit of text: `<!doctype html><html lang="en"><head>` (found at the very beginning of the file) and this bit of text: `<meta charset="utf-8"/>`, paste the code that was copied during the previous step. Make sure to save this change to the file.
+9. Open `intrinsink-hello-world/settings.json` and add the font name from step 6 to the beginning of the list of fonts. Make sure that you use single quotes instead of double quotes. For example, if adding Libre Baskerville the whole line in `settings.json` should be: 
     
     ```
     "mainFont": "'Libre Baskerville', Courier, 'Courier New', monospace",
@@ -104,10 +104,10 @@ The simplest possible background can be set by providing any legal CSS color val
 You can also specify a url for a background image, how the image should be scaled and positioned, and what color should be present beyond the edges of the image, among many other properties. Each property is separated by a space. For example:
 
 ```json
-"desktopBackground": "orange center 30% no-repeat url('https://squinky.github.io/intrapology-hello-world/images/stars.gif')",
+"desktopBackground": "orange center 30% no-repeat url('https://squinky.github.io/intrinsink-hello-world/images/stars.gif')",
 ```
 
-will result in a background with the image at ‘https://squinky.github.io/intrapology-hello-world/images/stars.gif’ scaled to 30% size, centered, with the color orange in the areas not covered by the image.
+will result in a background with the image at ‘https://squinky.github.io/intrinsink-hello-world/images/stars.gif’ scaled to 30% size, centered, with the color orange in the areas not covered by the image.
 
 > [!TIP]
 > `url(...)` allows you to specify any image that is located somewhere on the internet (or even your own images that you add to your performance, more on that in the next section). To do so, you simply need to provide the url (internet address) where the image is located.
@@ -116,7 +116,7 @@ will result in a background with the image at ‘https://squinky.github.io/intra
 
 You can use your own custom image for a background through the following process:
 
-1. Save the image in the `intrapology-hello-world/images` folder. For the sake of discussion we will imagine that your image is named “my-background.jpg”. The image should thus be saved to `intrapology-hello-world/images/my-background.jpg`.
+1. Save the image in the `intrinsink-hello-world/images` folder. For the sake of discussion we will imagine that your image is named “my-background.jpg”. The image should thus be saved to `intrinsink-hello-world/images/my-background.jpg`.
 2. Refer to the image for a background with the following: `url('/images/my-background.jpg')`.
 
 **Further Reading**
